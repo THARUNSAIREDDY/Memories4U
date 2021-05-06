@@ -2,130 +2,107 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 {% load static %}
-
-
-
 <div class="bg-image" 
-      style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
-      height: 100%">
-
+   style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
+   height: 100%">
 <div class="card col-md mx-2 mt-2 text-center ">
-  <div class="bg-image" 
-      style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
-      height: 100%">
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
-</head>
-<body>
-<br><br><br><br><br><br>
-<div class="about-section">
-  <h1 style="text-align:center">About Our Main Team</h1>
-  <h3 style="text-align:center">MEMORIES4U   PDTR</h3>
-</div>
-
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="{% static 'images/syam1.jpeg' %}" alt="SYAM" style="width:100%">
-      <div class="container">
-        <h2>SYAM SUNDHAR REDDY</h2>
-        <p class="title">Managing Directer</p>
-        <p>Managing Director of the Memories4U</p>
-        <p>memories4u21@gmail.com</p>
-        <p>7207420207</p>
-        <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="{% static 'images/sunil.jpeg' %}" alt="Mike" style="width:100%" style="height:50%">
-      <div class="container">
-        <h2>SUNIL</h2>
-        <p class="title">Art Director</p>
-        <p>Manager for all events .</p>
-        <p>memories4u21@gmail.com</p>
-                <p>7207420207</p>
-
-        <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="{% static 'images/sai.jpeg' %}" alt="John" style="width:100%">
-      <div class="container">
-        <h2>THARUNSAI REDDY</h2>
-        <p class="title">Web Developer</p>
-        <p>Mail me if you need any type of website.</p>
-        <p>chichilitharunsaireddy@gmail.com</p>
-                        <p>9110369907</p>
-
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
-
+<div class="bg-image" 
+   style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
+   height: 100%">
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            }
+            html {
+            box-sizing: border-box;
+            }
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+            .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            }
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            }
+            .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+            }
+            .
+            .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            @media screen and (max-width: 650px) {
+            .column {
+            width: 100%;
+            display: block;
+            }
+            }
+         </style>
+      </head>
+      <body>
+         <br><br><br><br><br><br>
+         <div class="about-section">
+            <h1 style="text-align:center">About Our Main Team</h1>
+            <h3 style="text-align:center">MEMORIES4U   PDTR</h3>
+         </div>
+         <h2 style="text-align:center">Our Team</h2>
+         <div class="row">
+            <div class="column">
+               <div class="card">
+                  <img src="{% static 'images/syam1.jpeg' %}" alt="SYAM" style="width:100%">
+                  <div class="container">
+                     <h2>SYAM SUNDHAR REDDY</h2>
+                     <p class="title">Managing Directer</p>
+                     <p>Managing Director of the Memories4U</p>
+                     <p>memories4u21@gmail.com</p>
+                     <p>7207420207</p>
+                     <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
+                  </div>
+               </div>
+            </div>
+            <div class="column">
+               <div class="card">
+                  <img src="{% static 'images/sunil.jpeg' %}" alt="Mike" style="width:100%" style="height:50%">
+                  <div class="container">
+                     <h2>SUNIL</h2>
+                     <p class="title">Art Director</p>
+                     <p>Manager for all events .</p>
+                     <p>memories4u21@gmail.com</p>
+                     <p>7207420207</p>
+                     <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
+                  </div>
+               </div>
+            </div>
+            <div class="column">
+               <div class="card">
+                  <img src="{% static 'images/sai.jpeg' %}" alt="John" style="width:100%">
+                  <div class="container">
+                     <h2>THARUNSAI REDDY</h2>
+                     <p class="title">Web Developer</p>
+                     <p>Mail me if you need any type of website.</p>
+                     <p>chichilitharunsaireddy@gmail.com</p>
+                     <p>9110369907</p>
+                     <p><button class="button">Contact</button></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
 </div>
 {% endblock %}

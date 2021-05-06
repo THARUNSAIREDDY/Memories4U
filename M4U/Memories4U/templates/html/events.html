@@ -5,61 +5,40 @@
 <br>
 <br><br><br>
 <div class="bg-image" 
-      style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
-      height: 100%">
-
-    
+   style="background-image: url('https://cdn.hipwallpaper.com/i/52/74/QEP83w.jpg');
+   height: 100%">
 <div class="main">
-    <div class="pic photo1 z-depth-3">
-        <center><img src="https://cdn.hipwallpaper.com/i/34/65/hnb1Do.jpg"></center>
-    </div>
-    <div class="caption1 cap">
-        <center>
-            <p class="text-white">I was captured in the wedding shoot</p>
-        </center>
-    </div>
-    <div class="bubble bubble1"></div>
-    <div class="pic photo2 z-depth-3">
-        <center><img src="https://qph.fs.quoracdn.net/main-qimg-eea0e6dd4db43c78615d140adbd7e87d"></center>
-    </div>
-    <div class="caption2 cap">
-        <center>
-            <p>Indian Agnishakshi</p>
-        </center>
-    </div>
-    <div class="bubble bubble2"></div>
-    <div class="pic photo3 z-depth-3">
-        <center><img src="https://i.vimeocdn.com/video/719160361.jpg"></center>
-    </div>
-    <div class="caption3 cap">
-        <center>
-            <p class="text-white">And a Happily Ever After began..</p>
-        </center>
-    </div>
-    <div class="bubble bubble3"></div>
+   <div class="bubble bubble1"></div>
+   <div class="pic photo2 z-depth-3">
+      <center><img src="https://qph.fs.quoracdn.net/main-qimg-eea0e6dd4db43c78615d140adbd7e87d"></center>
+   </div>
+   <div class="caption2 cap">
+      <center>
+         <p>Indian Agnishakshi</p>
+      </center>
+   </div>
 </div>
-
 <section class="text-center">
-         <h4 class="mb-5 text-white" ><strong>Our Main Events</strong></h4>
-         <div class="row">
-          {% for dest in dest %}
-            <div class="col-lg-4 col-md-12 mb-4">
-               <div class="card">
-                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                     <img src="{{dest.img.url}}" class="img-fluid" class="rounded" alt="Cinque Terre" width="304" height="236" />
-                     <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                     </a>
-                  </div>
-                  <div class="card-body">
-                     <h5 class="card-title">{{dest.name}}</h5>
-                     <p class="card-text">
-                        {{dest.des}}
-                     </p>
-                     <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
-                  </div>
-               </div>
-            </div>
-{% endfor %}
-      </section>
+   <h4 class="mb-5 text-white" ><strong>Our Main Events</strong></h4>
+   <div class="row">
+   {% for dest in dest %}
+   <div class="col-lg-4 col-md-12 mb-4">
+      <div class="card">
+         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="{{dest.img.url}}" class="img-fluid" class="rounded" alt="Cinque Terre" width="304" height="236" />
+            <a href="#!">
+               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+         </div>
+         <div class="card-body">
+            <h5 class="card-title">{{dest.name}}</h5>
+            <p class="card-text">
+               {{dest.des}}
+            </p>
+            <a href="{% url 'ct' %}" class="btn btn-primary">Contact Us</a>
+         </div>
+      </div>
+   </div>
+   {% endfor %}
+</section>
 {% endblock %}
